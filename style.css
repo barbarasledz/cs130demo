@@ -2,20 +2,76 @@
 * {
     box-sizing: border-box;
 }
+html {
+    min-height: 100vh;
+    margin: 0%;
+}
 
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: 100px auto;
 }
-header, section {
+header {
     padding: 20px;
+    background-color:rgb(255, 208, 254);
+}
+header h1 {
+    padding: 0;
+    margin: 8px 0;
 }
 p, li {
     line-height: 1.5em;
+    margin: 0px 20px;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100%;
+}
+section {
+    border: solid 0 1px #000;
+    min-height: 100%;
+}
+#tutorials {
+    background-color: #693697;
+    color: white;
+}
+#homework {
+    background-color: #2f9cad;
+}
 #inspiration {
-    background-color: #F0F0F0;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: #5f76dc;
+    color: white;
+}
+
+h2 {
+    margin: 0px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#inspiration a, 
+#inspiration a:link,
+#inspiration a:hover, 
+#inspiration a:visited,
+#lecture a, 
+#lecture a:link,
+#lecture a:hover, 
+#lecture a:visited,
+#tutorials a, 
+#tutorials a:link,
+#tutorials a:hover, 
+#tutorials a:visited
+{
+    color: white;
 }
